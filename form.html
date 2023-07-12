@@ -31,6 +31,37 @@
         nav a:hover{
             color: rgb(237, 54, 12);
         }
+        .section-1-form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            padding-top: 15px;
+           
+        }
+        .section-1-form input{
+            margin-top: 20px;
+            padding-top: 10px ;
+            padding-bottom: 10px;
+            font-size: large;
+        }
+        .section-1-form h2{
+            font-size: 40px;
+        }
+        #btn{
+            width: 30%;
+            margin: auto;
+            margin-top: 15px;
+            
+            
+        }
+        input:focus{
+            color: blue;
+            background-color: lightgrey;
+        }
+
+
     </style>
 </head>
 <body>
@@ -44,7 +75,14 @@
             </div>
             <a href="">Login</a>
         </nav>
-        <section></section>
+        <section class="section-1">
+            <form class="section-1-form">
+                <h2>your information</h2>
+                <input type="email" name="" id="" placeholder="Enter Your Email" required>
+                <input type="password" name="" id="" placeholder="Enter Your Password" required >
+               <input id="btn" type="button" value="Login">
+            </form>
+        </section>
     </header>
     <main></main>
     <footer></footer>
