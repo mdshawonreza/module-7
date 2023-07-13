@@ -31,6 +31,9 @@
         nav a:hover{
             color: rgb(237, 54, 12);
         }
+        .section-1{
+            margin-top:100px;
+        }
         .section-1-form{
             display: flex;
             flex-direction: column;
@@ -38,29 +41,76 @@
             margin: auto;
             text-align: center;
             padding-top: 15px;
+            background-image:url("./images/banner2.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            
+
            
         }
         .section-1-form input{
-            margin-top: 20px;
-            padding-top: 10px ;
+            margin: 20px 100px 0px 20px ;
+            padding:10px 40px 10px 30px;
             padding-bottom: 10px;
             font-size: large;
         }
+        
         .section-1-form h2{
-            font-size: 40px;
+            font-size: 2.5em;
+         
         }
         #btn{
-            width: 30%;
-            margin: auto;
+            width: 40%;
+            margin-left: 150px;
             margin-top: 15px;
-            
+            margin-bottom: 15px;
+            border-radius: 4px;
+            background-color: red;
+            color: white;
+            border: none;
+            font-size: 1.5em;
             
         }
         input:focus{
             color: blue;
             background-color: lightgrey;
         }
-
+        .section-2{
+            margin-top: 70px;
+        }
+        .section-2 h2{
+            text-align: center;
+            font-size: 2.5em;
+            border-bottom: 2px solid red;
+            margin-left: 120px;
+            margin-right: 120px;
+            padding: 15px 20px;
+        }
+        .s-2-h-span{
+            color: rgb(204, 89, 106);
+        }
+        .section-2-cal{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(6 ,50px);
+            column-gap: 20px;
+            row-gap: 20px;
+            margin: 20px;
+        }
+        .date , .day{
+            background-color: skyblue;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            height: 50px;
+            align-items: center;
+            font-size:1.7em;
+        }
+        .day{
+            background-color: gray;
+            font-size:1.5em;
+        }
 
     </style>
 </head>
@@ -78,10 +128,58 @@
         <section class="section-1">
             <form class="section-1-form">
                 <h2>your information</h2>
-                <input type="email" name="" id="" placeholder="Enter Your Email" required>
-                <input type="password" name="" id="" placeholder="Enter Your Password" required >
+                <input type="email" name="" id="" placeholder="Enter Your Email..." required>
+                <input type="password" name="" id="" placeholder="Enter Your Password..." required >
                <input id="btn" type="button" value="Login">
             </form>
+        </section>
+        <section class="section-2">
+            <h2>My Personal Calender <span class="s-2-h-span">( July )</span></h2>
+        <div class="section-2-cal">
+            <div class="day">S</div>
+            <div class="day">M</div>
+            <div class="day">T</div>
+            <div class="day">W</div>
+            <div class="day">T</div>
+            <div class="day">F</div>
+            <div class="day">S</div>
+            <div class="date">29</div>
+            <div class="date">30</div>
+            <div class="date">31</div>
+            <div class="date">1</div>
+            <div class="date">2</div>
+            <div class="date">3</div>
+            <div class="date">4</div>
+            <div class="date">5</div>
+            <div class="date">6</div>
+            <div class="date">7</div>
+            <div class="date">8</div>
+            <div class="date">9</div>
+            <div class="date">10</div>
+            <div class="date">11</div>
+            <div class="date">12</div>
+            <div class="date">13</div>
+            <div class="date">14</div>
+            <div class="date">15</div>
+            <div class="date">16</div>
+            <div class="date">17</div>
+            <div class="date">18</div>
+            <div class="date">19</div>
+            <div class="date">20</div>
+            <div class="date">21</div>
+            <div class="date">22</div>
+            <div class="date">23</div>
+            <div class="date">24</div>
+            <div class="date">25</div>
+            <div class="date">26</div>
+            <div class="date">27</div>
+            <div class="date">28</div>
+            <div class="date">29</div>
+            <div class="date">30</div>
+            <div class="date">1</div>
+            <div class="date">2</div>
+            
+        </div>
         </section>
     </header>
     <main></main>
